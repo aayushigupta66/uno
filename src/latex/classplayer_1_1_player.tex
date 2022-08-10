@@ -1,0 +1,83 @@
+\hypertarget{classplayer_1_1_player}{}\doxysection{player.\+Player Class Reference}
+\label{classplayer_1_1_player}\index{player.Player@{player.Player}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplayer_1_1_player_a8b4345f54b4739c075cd1356f5111dcc}{Player}} (int id)
+\item 
+void \mbox{\hyperlink{classplayer_1_1_player_a6227c114d59ceaecc5da9f27d4b0ca3d}{add\+Card}} (\mbox{\hyperlink{classdeck_1_1_card}{Card}} card)
+\item 
+\mbox{\hyperlink{classdeck_1_1_card}{Card}} \mbox{\hyperlink{classplayer_1_1_player_af7eaf95c1e2ed124874a25c9a42e7691}{remove\+Card}} (int index)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classdeck_1_1_card}{Card}} $>$ \mbox{\hyperlink{classplayer_1_1_player_ac3352d6871e5105a9dc76b060abd8e3a}{get\+Hand}} ()
+\item 
+int \mbox{\hyperlink{classplayer_1_1_player_a5c19fae4d2c5ce409d95b99d795213fe}{get\+Id}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Keeps track of each player\textquotesingle{}s hand and is given an id to differentiate amongst players. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplayer_1_1_player_a8b4345f54b4739c075cd1356f5111dcc}\label{classplayer_1_1_player_a8b4345f54b4739c075cd1356f5111dcc}} 
+\index{player.Player@{player.Player}!Player@{Player}}
+\index{Player@{Player}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily player.\+Player.\+Player (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Constructor for new player. 
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ unique id \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayer_1_1_player_a6227c114d59ceaecc5da9f27d4b0ca3d}\label{classplayer_1_1_player_a6227c114d59ceaecc5da9f27d4b0ca3d}} 
+\index{player.Player@{player.Player}!addCard@{addCard}}
+\index{addCard@{addCard}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily void player.\+Player.\+add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdeck_1_1_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+Adds given card to player\textquotesingle{}s hand. 
+\begin{DoxyParams}{Parameters}
+{\em card} & -\/ card that will be added to the player\textquotesingle{}s hand \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classplayer_1_1_player_ac3352d6871e5105a9dc76b060abd8e3a}\label{classplayer_1_1_player_ac3352d6871e5105a9dc76b060abd8e3a}} 
+\index{player.Player@{player.Player}!getHand@{getHand}}
+\index{getHand@{getHand}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classdeck_1_1_card}{Card}}$>$ player.\+Player.\+get\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the player\textquotesingle{}s hand of cards. \begin{DoxyReturn}{Returns}
+player\textquotesingle{}s hand 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classplayer_1_1_player_a5c19fae4d2c5ce409d95b99d795213fe}\label{classplayer_1_1_player_a5c19fae4d2c5ce409d95b99d795213fe}} 
+\index{player.Player@{player.Player}!getId@{getId}}
+\index{getId@{getId}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int player.\+Player.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get method for the player\textquotesingle{}s unique id. \begin{DoxyReturn}{Returns}
+id of player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classplayer_1_1_player_af7eaf95c1e2ed124874a25c9a42e7691}\label{classplayer_1_1_player_af7eaf95c1e2ed124874a25c9a42e7691}} 
+\index{player.Player@{player.Player}!removeCard@{removeCard}}
+\index{removeCard@{removeCard}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{removeCard()}{removeCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdeck_1_1_card}{Card}} player.\+Player.\+remove\+Card (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Removes specific card from player\textquotesingle{}s hand. 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index of the specific card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+card that was removed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+player/Player.\+java\end{DoxyCompactItemize}

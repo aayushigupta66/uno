@@ -1,0 +1,84 @@
+\hypertarget{classdeck_1_1_card_deck}{}\doxysection{deck.\+Card\+Deck Class Reference}
+\label{classdeck_1_1_card_deck}\index{deck.CardDeck@{deck.CardDeck}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdeck_1_1_card_deck_a013a5b17e5d51fcb7694c96bdc63917c}{Card\+Deck}} ()
+\item 
+\mbox{\hyperlink{classdeck_1_1_card}{Card}} \mbox{\hyperlink{classdeck_1_1_card_deck_a9c4a41cc781d10fff6c8040b94b5d394}{draw}} ()
+\item 
+void \mbox{\hyperlink{classdeck_1_1_card_deck_abb50267812d0d7df84509257e2d4f195}{discard}} (\mbox{\hyperlink{classdeck_1_1_card}{Card}} card)
+\item 
+\mbox{\hyperlink{classdeck_1_1_card}{Card}} \mbox{\hyperlink{classdeck_1_1_card_deck_ad40808be060f8835d82b7082954b1483}{get\+Latest\+Discard\+Card}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classdeck_1_1_card}{Card}} $>$ \mbox{\hyperlink{classdeck_1_1_card_deck_a81cec72e08c6337f74621c90bbf017ab}{get\+Draw\+Pile}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classdeck_1_1_card}{Card}} $>$ \mbox{\hyperlink{classdeck_1_1_card_deck_a03d3de5f010390df25516b4f38143c16}{get\+Discard\+Pile}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Initializes the draw and discard piles and allows modifications to both decks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdeck_1_1_card_deck_a013a5b17e5d51fcb7694c96bdc63917c}\label{classdeck_1_1_card_deck_a013a5b17e5d51fcb7694c96bdc63917c}} 
+\index{deck.CardDeck@{deck.CardDeck}!CardDeck@{CardDeck}}
+\index{CardDeck@{CardDeck}!deck.CardDeck@{deck.CardDeck}}
+\doxysubsubsection{\texorpdfstring{CardDeck()}{CardDeck()}}
+{\footnotesize\ttfamily deck.\+Card\+Deck.\+Card\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for new shuffled draw pile. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdeck_1_1_card_deck_abb50267812d0d7df84509257e2d4f195}\label{classdeck_1_1_card_deck_abb50267812d0d7df84509257e2d4f195}} 
+\index{deck.CardDeck@{deck.CardDeck}!discard@{discard}}
+\index{discard@{discard}!deck.CardDeck@{deck.CardDeck}}
+\doxysubsubsection{\texorpdfstring{discard()}{discard()}}
+{\footnotesize\ttfamily void deck.\+Card\+Deck.\+discard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdeck_1_1_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+Add card to discard pile. 
+\begin{DoxyParams}{Parameters}
+{\em card} & card that needs to be discarded \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdeck_1_1_card_deck_a9c4a41cc781d10fff6c8040b94b5d394}\label{classdeck_1_1_card_deck_a9c4a41cc781d10fff6c8040b94b5d394}} 
+\index{deck.CardDeck@{deck.CardDeck}!draw@{draw}}
+\index{draw@{draw}!deck.CardDeck@{deck.CardDeck}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdeck_1_1_card}{Card}} deck.\+Card\+Deck.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draw the top card from the draw pile. \begin{DoxyReturn}{Returns}
+card that has been drawn 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdeck_1_1_card_deck_a03d3de5f010390df25516b4f38143c16}\label{classdeck_1_1_card_deck_a03d3de5f010390df25516b4f38143c16}} 
+\index{deck.CardDeck@{deck.CardDeck}!getDiscardPile@{getDiscardPile}}
+\index{getDiscardPile@{getDiscardPile}!deck.CardDeck@{deck.CardDeck}}
+\doxysubsubsection{\texorpdfstring{getDiscardPile()}{getDiscardPile()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classdeck_1_1_card}{Card}}$>$ deck.\+Card\+Deck.\+get\+Discard\+Pile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+discard pile 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdeck_1_1_card_deck_a81cec72e08c6337f74621c90bbf017ab}\label{classdeck_1_1_card_deck_a81cec72e08c6337f74621c90bbf017ab}} 
+\index{deck.CardDeck@{deck.CardDeck}!getDrawPile@{getDrawPile}}
+\index{getDrawPile@{getDrawPile}!deck.CardDeck@{deck.CardDeck}}
+\doxysubsubsection{\texorpdfstring{getDrawPile()}{getDrawPile()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classdeck_1_1_card}{Card}}$>$ deck.\+Card\+Deck.\+get\+Draw\+Pile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+draw pile 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdeck_1_1_card_deck_ad40808be060f8835d82b7082954b1483}\label{classdeck_1_1_card_deck_ad40808be060f8835d82b7082954b1483}} 
+\index{deck.CardDeck@{deck.CardDeck}!getLatestDiscardCard@{getLatestDiscardCard}}
+\index{getLatestDiscardCard@{getLatestDiscardCard}!deck.CardDeck@{deck.CardDeck}}
+\doxysubsubsection{\texorpdfstring{getLatestDiscardCard()}{getLatestDiscardCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdeck_1_1_card}{Card}} deck.\+Card\+Deck.\+get\+Latest\+Discard\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the latest card from the discard pile. \begin{DoxyReturn}{Returns}
+last card from discard pile 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+deck/Card\+Deck.\+java\end{DoxyCompactItemize}

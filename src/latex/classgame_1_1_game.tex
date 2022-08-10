@@ -1,0 +1,135 @@
+\hypertarget{classgame_1_1_game}{}\doxysection{game.\+Game Class Reference}
+\label{classgame_1_1_game}\index{game.Game@{game.Game}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumgame_1_1_game_1_1_direction}{Direction}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_game_a35a850edb4ad7f3b5e31051db251363c}{Game}} (int num\+Players)
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_a86814b2699d39e7333a01bb1084b21b7}{run\+Game}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_accfe23db0e4600115709f5f5f1f4b4c8}{play}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_ac2a1900c0868757857b143b217da222c}{play\+Card}} (int hand\+Index, \mbox{\hyperlink{enumdeck_1_1_card_info_1_1_color}{Card\+Info.\+Color}} color\+Choice, int number\+Choice, boolean reverse\+Choice)
+\item 
+int \mbox{\hyperlink{classgame_1_1_game_afd3443d40ee926fd993f4f660a8ef432}{pick\+Card}} ()
+\item 
+boolean \mbox{\hyperlink{classgame_1_1_game_a743263ba16ca94a0d661416d346ebcfc}{is\+Valid}} (\mbox{\hyperlink{classdeck_1_1_card}{Card}} card)
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_a82d4bb12840a6f196a70a4f3b48815fe}{update\+Turn}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_ae1e96c7d2b409476c62cb6393ce900c6}{check\+Game\+Status}} (Array\+List$<$ \mbox{\hyperlink{classdeck_1_1_card}{Card}} $>$ player\+Hand)
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_affa16ec6023d5d7df6252115d656f5fa}\label{classgame_1_1_game_affa16ec6023d5d7df6252115d656f5fa}} 
+boolean {\bfseries get\+Game\+Over} ()
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_ab7422e775d30cf79fee581cea78e719b}\label{classgame_1_1_game_ab7422e775d30cf79fee581cea78e719b}} 
+int {\bfseries get\+Turn} ()
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_a38e6cca56b8f9919dc3e82d889bc587e}\label{classgame_1_1_game_a38e6cca56b8f9919dc3e82d889bc587e}} 
+Array\+List$<$ \mbox{\hyperlink{classplayer_1_1_player}{Player}} $>$ {\bfseries get\+Players} ()
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_af51346860a798f8c731c770a012e32e4}\label{classgame_1_1_game_af51346860a798f8c731c770a012e32e4}} 
+\mbox{\hyperlink{classdeck_1_1_card_deck}{Card\+Deck}} {\bfseries get\+Game\+Card\+Deck} ()
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_ab74eae184d21a6143b805e2af03cfb65}\label{classgame_1_1_game_ab74eae184d21a6143b805e2af03cfb65}} 
+int {\bfseries get\+Draw\+Count} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_a015c5d6229f32f85864ce2af167bc7b3}\label{classgame_1_1_game_a015c5d6229f32f85864ce2af167bc7b3}} 
+static final int {\bfseries HAND\+\_\+\+SIZE} = 7
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Runs a game and keeps track of the game state. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1_game_a35a850edb4ad7f3b5e31051db251363c}\label{classgame_1_1_game_a35a850edb4ad7f3b5e31051db251363c}} 
+\index{game.Game@{game.Game}!Game@{Game}}
+\index{Game@{Game}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily game.\+Game.\+Game (\begin{DoxyParamCaption}\item[{int}]{num\+Players }\end{DoxyParamCaption})}
+
+Constructs and runs the game based on the given number of players. 
+\begin{DoxyParams}{Parameters}
+{\em num\+Players} & -\/ number of players in the game \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1_game_ae1e96c7d2b409476c62cb6393ce900c6}\label{classgame_1_1_game_ae1e96c7d2b409476c62cb6393ce900c6}} 
+\index{game.Game@{game.Game}!checkGameStatus@{checkGameStatus}}
+\index{checkGameStatus@{checkGameStatus}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{checkGameStatus()}{checkGameStatus()}}
+{\footnotesize\ttfamily void game.\+Game.\+check\+Game\+Status (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classdeck_1_1_card}{Card}} $>$}]{player\+Hand }\end{DoxyParamCaption})}
+
+Checks if the current player has any cards left and sets the game state accordingly. 
+\begin{DoxyParams}{Parameters}
+{\em player\+Hand} & -\/ current player\textquotesingle{}s hand of cards \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a743263ba16ca94a0d661416d346ebcfc}\label{classgame_1_1_game_a743263ba16ca94a0d661416d346ebcfc}} 
+\index{game.Game@{game.Game}!isValid@{isValid}}
+\index{isValid@{isValid}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily boolean game.\+Game.\+is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdeck_1_1_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+Checks if the card the player wants to play is valid, based on the game\textquotesingle{}s rules. 
+\begin{DoxyParams}{Parameters}
+{\em card} & -\/ card the player wants to play \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given card is a valid play 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_afd3443d40ee926fd993f4f660a8ef432}\label{classgame_1_1_game_afd3443d40ee926fd993f4f660a8ef432}} 
+\index{game.Game@{game.Game}!pickCard@{pickCard}}
+\index{pickCard@{pickCard}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{pickCard()}{pickCard()}}
+{\footnotesize\ttfamily int game.\+Game.\+pick\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Asks the player to pick a card. \begin{DoxyReturn}{Returns}
+index of selected card 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_accfe23db0e4600115709f5f5f1f4b4c8}\label{classgame_1_1_game_accfe23db0e4600115709f5f5f1f4b4c8}} 
+\index{game.Game@{game.Game}!play@{play}}
+\index{play@{play}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void game.\+Game.\+play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Player\textquotesingle{}s turn to play any card. \mbox{\Hypertarget{classgame_1_1_game_ac2a1900c0868757857b143b217da222c}\label{classgame_1_1_game_ac2a1900c0868757857b143b217da222c}} 
+\index{game.Game@{game.Game}!playCard@{playCard}}
+\index{playCard@{playCard}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{playCard()}{playCard()}}
+{\footnotesize\ttfamily void game.\+Game.\+play\+Card (\begin{DoxyParamCaption}\item[{int}]{hand\+Index,  }\item[{\mbox{\hyperlink{enumdeck_1_1_card_info_1_1_color}{Card\+Info.\+Color}}}]{color\+Choice,  }\item[{int}]{number\+Choice,  }\item[{boolean}]{reverse\+Choice }\end{DoxyParamCaption})}
+
+Update the decks and game state based on what card the player plays. 
+\begin{DoxyParams}{Parameters}
+{\em hand\+Index} & -\/ index of the card the player wants to play \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a86814b2699d39e7333a01bb1084b21b7}\label{classgame_1_1_game_a86814b2699d39e7333a01bb1084b21b7}} 
+\index{game.Game@{game.Game}!runGame@{runGame}}
+\index{runGame@{runGame}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{runGame()}{runGame()}}
+{\footnotesize\ttfamily void game.\+Game.\+run\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Main game loop for running the game. \mbox{\Hypertarget{classgame_1_1_game_a82d4bb12840a6f196a70a4f3b48815fe}\label{classgame_1_1_game_a82d4bb12840a6f196a70a4f3b48815fe}} 
+\index{game.Game@{game.Game}!updateTurn@{updateTurn}}
+\index{updateTurn@{updateTurn}!game.Game@{game.Game}}
+\doxysubsubsection{\texorpdfstring{updateTurn()}{updateTurn()}}
+{\footnotesize\ttfamily void game.\+Game.\+update\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the players turn based on the direction of the game. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/Game.\+java\end{DoxyCompactItemize}
